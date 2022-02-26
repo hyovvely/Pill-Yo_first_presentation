@@ -1,0 +1,85 @@
+/* drug.css */
+ a{
+ 	text-decoration: none;
+ 	    color: #0d3bb1;
+ 	 margin-left: 11px;
+ }
+ /* 스크롤바 없애기 */
+body{
+ -ms-overflow-style: none;
+ }
+ 
+::-webkit-scrollbar {
+  display: none;
+}
+#searchResult{
+	width: 1000px;
+	display:flex;
+	flex-wrap: wrap; /* 박스 크기안에서 줄바꿈 */
+	justify-content: start;
+	
+}
+
+.drugBox2scroll{
+	overflow:scroll;
+	 scrollbar-width: none;
+}
+
+.drugBox{
+	width: 300px;
+	height: 300px;
+	margin: 10px 10px;
+	display:flex;
+	flex-direction: column;
+	border: 2px solid black;
+	border-radius: 30px;
+	overflow: hidden;
+	border-color: #f7f7f7;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+	background: #f6f8ff94;
+}
+
+.drugBox2{
+	    width: 600px;
+    height: 600px;
+	margin: 10px 10px;
+	display:flex;
+	flex-direction: column;
+	border: 2px solid black;
+	border-radius: 30px;
+	overflow: hidden;
+	border-color: #f7f7f7;
+	box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+	background: white;
+	
+}
+
+
+.drugImg{
+	width:100%;
+	
+}
+.drugInfo{
+	display:flex;
+	flex-direction: column;
+}
+.itemName{
+    margin-left: 11px;
+   	font-size: 23px;
+	font-weight: bold;
+}
+.entpName{
+	margin-left:5px;
+	font-size: 13px;
+}
+.drugBox:hover {
+	top:-2px;
+	border: 3px solid white;
+ 	box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+}
+
+.drugBox2:hover {
+	top:-2px;
+	border: 3px solid white;
+ 	box-shadow: 0 4px 5px rgba(0, 0, 0, .2);
+}
